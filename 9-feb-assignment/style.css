@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #999;
+}
+
+.box{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+    .box1{
+        display: block;
+        background-color: aquamarine;
+    }
+  }
+
+
+
+@media only screen and (min-width: 1024px){
+    .box2 {
+      display: block;
+      background-color: rgb(49, 146, 0);
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .box3 {
+      display: block;
+      background-color: rgb(149, 114, 9);
+    }
+  }
+
+  @media only screen and (min-width: 425px){
+    .box4 {
+      display: block;
+      background-color: skyblue;
+    }
+  }
+
+
+@media screen and (max-width: 425px) {
+    .box5 {
+      display: block;
+      background-color: maroon;
+    }
+  } 
+
+

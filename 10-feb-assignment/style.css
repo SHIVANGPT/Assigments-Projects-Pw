@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    background-color:#111827;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    gap: 1rem;
+    margin: 1rem 0.5rem 0 0;
+    font-weight: 600;
+}
+.hamburger{
+    display: none;
+    width: 35px;
+}
+.hamburger img{
+    width: 30px;
+}
+ 
+/* main section starts here  */
+
+main{
+    width: 95%;
+    margin: 2rem auto;
+
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+}
+.hero .name{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.hero h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 3px 1px;
+}
+
+.hero .name img {
+width: 20px;
+}
+
+.hero .poster img{
+    width: 300px;
+}
+
+/* Media Query */
+@media screen and (max-width:500px) {
+    nav ul{
+        display: none;
+
+    }
+    .hamburger{
+        display: block;
+    }
+    
+    .hero{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .hero .name{
+        margin-bottom: 1rem;
+        align-items: center;
+        
+    }
+    .projects .project-card {
+        width: 65%;
+        margin: 0px;
+    }
+    .projects{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
+
+/* projects section  */
+
+main h2{
+    margin: 1rem 0 5px 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 5px auto;
+}
+.projects .project-card {
+    width: 45%;
+    margin: 10px;
+}
+
+.projects .project-card img{
+    width: 100%;
+}
+.projects .project-card h4{
+    text-align: center;
+}
+
+/* footer section starts here  */
+
+footer h2{
+    margin: 1rem 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+footer .icons{
+    display: flex;
+    justify-content: center;
+}
+
+footer .icons img{
+    width: 35px;
+    padding: 5px;
+    margin: 5px;
+}
+footer .icons img:hover{
+    cursor: pointer;
+    width: 38px;
+}
+
+
+
+
