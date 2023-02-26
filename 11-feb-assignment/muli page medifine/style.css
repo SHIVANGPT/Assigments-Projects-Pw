@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin-left: 3rem;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./assets/stethoscope.png);
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+}
+
+/* header section  */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: center;
+    padding-top: 2rem;
+    background: transparent;
+}
+header .logo img{
+ width: 10rem;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+header ul li{
+    margin: 0 0.8rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+header ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+header ul li a:hover{
+    cursor: pointer;
+    color: #41D399;
+}
+ 
+
+
+/* main section starts here  */
+
+.hero{
+    display: flex;
+margin-top: 3rem;
+/* flex-direction: column;
+align-content: center; */
+
+}
+
+.hero .left-sec{
+    width: 50%;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero .left-sec h1{
+    font-weight: 700;
+    font-size:4rem;
+}
+
+.hero .left-sec p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: gray;
+    margin: 20px 0;
+}
+
+.hero .left-sec .btn-angle-box{
+    margin-top: 2rem, ;
+display: flex;
+justify-content: space-between;
+padding: 5px 1rem;
+}
+.hero .left-sec .btn-angle-box button{
+   background-color: #41D399;
+   border-radius: 25%;
+   font-size: 1.5rem;
+   font-weight: 800;
+   border: none;
+   color: white;
+   /* padding: 5px; */
+   width: 350px;
+   height: 70px;
+}
+
+.hero .left-sec .btn-angle-box .bang{
+    width: 100px;
+    text-align: start;
+
+}
+
+.hero .left-sec .btn-angle-box .mouse{
+    width: 80px;
+    text-align: end;
+
+}
+
+.right-sec{
+    /* width: 30%; */
+    position: relative;
+    margin-top: 3rem;
+}
+.right-sec-img{
+    width: 100%;
+}
+.right-sec-img img{
+    width: 300px;
+    position: absolute;
+}
+.right-sec-img .green{
+    z-index: 1;
+    width: 500px;
+    left: 220px;
+    top: 40px;
+ 
+}
+.right-sec-img .yellow{
+z-index: 2;
+width: 450px;
+top: 70px;
+left: 280px;
+
+}
+.right-sec-img .doctor{
+z-index: 3;
+top: -100px;
+left: 200px;
+width: 500px;
+}
+
+/* Media query for header  */
+
+/* @media (min-width: 200px) and (max-width: 750px) {
+    header{
+        flex-direction: column; 
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left-sec{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+    .hero .left-sec h1{
+        font-weight: 700;
+        font-size:3rem;
+        text-align: center;
+    }
+    .right-sec{
+        right: 245px;
+    margin-top: 5rem;
+    }
+  } */

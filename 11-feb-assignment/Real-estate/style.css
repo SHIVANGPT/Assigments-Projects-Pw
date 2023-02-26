@@ -1,0 +1,367 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:  sans-serif, serif;
+  background-color: #f6f8fa;
+}
+
+/* common classes */
+.btn {
+  width: 150px;
+  height: 50px;
+  padding: 6px 10px;
+  margin: 10px 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: serif;
+  background-color: #6663e9;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #403dff;
+}
+.sub-heading{
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.heading-para{
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+/* header part styling */
+/* nav styling------------ */
+.container-home {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 125vh;
+  background-image: linear-gradient(#00000080, #00000080),
+    url(./Photos/mainBackground.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+}
+
+.container-home header {
+  width: 85%;
+  margin: 10px auto;
+  /* border: 1px solid greenyellow; */
+}
+
+.container-home header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1rem 5rem 1rem 10rem; */
+  border-bottom: 2px solid #ffffff;
+  width: 100%;
+  height: 12vh;
+  margin-bottom: 2rem;
+}
+
+.container-home header .nav-logo img {
+  width: 130px;
+}
+
+.container-home header ul {
+  display: flex;
+  list-style: none;
+  font-size: 1.4rem;
+  /* font-weight: bold; */
+  column-gap: 40px;
+  cursor: pointer;
+}
+.container-home header ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* tagline main heading section jus after nav ----  */
+
+.tagline {
+  padding: 1.2rem 0 1rem 2rem;
+}
+
+.tagline h1 {
+  font-size: 5rem;
+  margin: 1rem 0;
+  font-weight: 900;
+  line-height: 100px;
+}
+
+/* .container-home bottom section styling  */
+.container-home .bottom-home {
+  width: 94%;
+  height: 180px;
+  margin: 1rem auto;
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  z-index: 10;
+  border-radius: 25px;
+  padding: 0.8rem 0;
+  border: none;
+  box-shadow: 0px 0px 2px 1px gray;
+}
+
+/* Cards and details section styling */
+
+#location::before {
+  content: "";
+  display: block;
+  width: 80vw;
+  height: 180px;
+  
+}
+
+
+#location h1 {
+  width: 90%;
+
+  margin: 1rem auto;
+  text-align: center;
+}
+#location .home-cards {
+  margin: 1rem 2rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+#location .home-cards .detail-card {
+  width: 90%;
+  height: 500px;
+  margin: 0 2rem 5rem 3rem;
+  align-self: flex-end;
+}
+#location .home-cards .detail-card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+/* /j////////more details section  */
+.more-details {
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+    align-items: center;
+  width: 90%;
+  height: 110px;
+  margin: 1px auto;
+  z-index: 10;
+  background-color: #fff;
+  position: relative;
+  top: -50px;
+  padding: 0.6rem 1rem;
+  
+}
+.more-details .btn {
+  border-radius: 50px;
+  width: 130px;
+}
+.locate h2{
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.locate h3{
+  color: #6663e9;
+}
+ 
+/* Bookkiiing section starts here  */
+.booking{
+display: flex;
+flex-direction: column;
+}
+.booking img{
+  width: 400px;
+  position: relative;
+  border-radius: 25px;
+}
+.booking .booking-img{
+  width: 450px;
+}
+#book-up-image{
+  z-index: 10;
+  height: 400px;
+  /* width: 400px; */
+ top: 360px;
+ /* right: 100px; */
+ right: 184px;
+}
+#book-down-image{
+z-index: 1;
+top: 0px;
+width: 600px;
+right: 300px;
+}
+.booking-box{
+ display: flex;
+align-items: center;
+justify-content: center;
+/* height: 700px; */
+margin-top: -15rem;
+}
+
+#book-up-image-2{
+  z-index: 10;
+  height: 400px;
+  /* width: 400px; */
+ top: 380px;
+ /* right: 100px; */
+ left: 190px;
+}
+#book-down-image-2{
+z-index: 1;
+height: 500px;
+top: 0px;
+width: 700px;
+left: 20px;
+}
+
+.booking-detail{
+  height: 100%;
+  text-align: start;
+  margin-top: 8rem;
+  padding: 3rem 0rem;
+}
+
+.booking-detail .heading-para{
+  margin: 2rem 0;
+}
+
+.booking-detail button{
+  width: 170px;
+}
+
+/* blogs sectiion styling  */
+
+.blogs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #6663e9;
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 75px;
+  padding: 2rem;
+}
+.blogs h2{
+  font-size: 4.5rem;
+  margin: 1rem 0;
+  font-weight: 800;
+  line-height: 80px;
+  color: #fff;
+}
+
+.subscribe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+ 
+.subscribe .add-icon{
+  width: 500px;
+  background-color: #5654D1;
+  padding: 1rem;
+  border-radius: 50px;
+}
+::placeholder {
+        
+  /* Firefox, Chrome, Opera */
+  color: #fff;
+}
+.subscribe input{
+  border: none;
+  background-color: #5654D1;
+  color: #fff ;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
+  
+}
+.subscribe .btn{
+  background-color: #fff;
+  color: #5654D1;
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+
+
+/* footer ------------- */
+
+footer{
+  /* width: 95%; */
+  /* height: 500px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+  margin-top: 8rem;
+}
+
+.left-foot{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 25px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.left-foot .social-icon{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 15px;
+}
+
+.right-foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 100px;
+  padding-right: 2rem;
+}
+
+.right-foot .right-foot-list h3{
+font-size: 1.3rem;
+font-weight: 600;
+margin-bottom: 1.4rem;
+}
+
+.right-foot .right-foot-list ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 25px;
+ 
+}
+.right-foot .right-foot-list ul a{
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 100;
+}
+
